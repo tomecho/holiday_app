@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'holiday#index'
+  root :to => 'holiday#index'
+  get 'import', to: 'holiday#import'
   resources :holiday
 end

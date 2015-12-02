@@ -88,6 +88,7 @@ h1, h2, h3, h4, h5, h6 {
                                       footer ul li {
                                           float: left;
                                             margin-left: 15px;
+                                            margin-right: 50px;
                                           }
 
 $gray-medium-light: #eaeaea;
@@ -170,3 +171,7 @@ input {
                             color: $state-danger-text;
                               }
                             }
+#content {
+  margin-left: 50px;
+  margin-right: 50px;
+}
