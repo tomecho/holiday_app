@@ -11,13 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124211513) do
+ActiveRecord::Schema.define(version: 20151202203939) do
+
+  create_table "countries", force: :cascade do |t|
+    t.string "name"
+    t.string "alpha2"
+  end
 
   create_table "holidays", force: :cascade do |t|
     t.string   "name"
     t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "country_id"
   end
 
 end

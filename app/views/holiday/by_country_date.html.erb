@@ -1,4 +1,4 @@
-<h1>Listing All Holidays</h1>
+<h1>Listing Holidays on <%= @date.to_formatted_s(:long_ordinal) %> in <%= @country_name %></h1>
 <div id="content">
 <table>
   <thead>
@@ -30,4 +30,3 @@
 <%= link_to "New Holiday", new_holiday_path %>
 </div>
 <br>
-

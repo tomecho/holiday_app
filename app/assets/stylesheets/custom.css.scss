@@ -1,5 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+p#notice {
+  padding: 10px;
+  color : red;
+}
+
 body {
     padding-top: 60px;
   }
