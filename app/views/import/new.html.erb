@@ -1,7 +1,10 @@
+<h1>Import</h1>
 <div id="content">
-<form action="/import" method="post">
-  <input name="alpha2" value="US">
-  <input name="year" value="2015">
-  <button>Submit</button>
-</form>
+  <%= form_tag("/import", method: "post") do %>
+    <%= label_tag("Country Code") %> <br />
+    <%= text_field(:import, :alpha2) %>
+    <%= label_tag("Year (YYYY)") %> <br />
+    <%= text_field(:import, :year) %>
+    <%= submit_tag("Import") %>
+  <% end %>
 </div>
