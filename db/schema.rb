@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151202203939) do
+ActiveRecord::Schema.define(version: 20151209211932) do
 
   create_table "countries", force: :cascade do |t|
     t.string "name"
@@ -25,5 +25,8 @@ ActiveRecord::Schema.define(version: 20151202203939) do
     t.datetime "updated_at", null: false
     t.integer  "country_id"
   end
+
+  add_index "holidays", ["date"], name: "index_holidays_on_date"
+  add_index "holidays", ["name"], name: "index_holidays_on_name"
 
 end
